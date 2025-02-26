@@ -34,26 +34,41 @@ La arquitectura está organizada en varios módulos que colaboran para ofrecer l
 | POST   | /auth/register          | Registro de usuario       |
 | POST   | /auth/login             | Inicio de sesión          |
 | GET    | /auth/check-session     | Verificación de sesión    |
+| POST   | /auth/logout            | Cerrar sesión             |
 
 ### 💰 Wallets
 | Método | Endpoint               | Descripción               |
 |--------|------------------------|---------------------------|
 | GET    | /wallet/create          | Crear una nueva wallet    |
-| GET    | /wallet/{id}/balance    | Consultar saldo de wallet |
-| POST   | /wallet/buy             | Realizar compra           |
-| POST   | /wallet/sell            | Realizar venta            |
+| GET    | /wallet/generate-keys   | Generar claves para wallet|
+| GET    | /wallet/transactions    | Consultar transacciones   |
+| GET    | /wallet/balance         | Consultar saldo de wallet |
+| POST   | /wallet/buy             | Comprar un activo         |
+| POST   | /wallet/sell            | Vender un activo          |
 
 ### ⛓️ Blockchain
 | Método | Endpoint               | Descripción               |
 |--------|------------------------|---------------------------|
-| GET    | /blockchain/blocks      | Ver todos los bloques     |
 | POST   | /blockchain/mine        | Minar un nuevo bloque     |
+| GET    | /blockchain             | Ver todos los bloques     |
+| GET    | /blockchain/validate    | Validar la blockchain     |
 
 ### 📝 Contratos Inteligentes
 | Método | Endpoint               | Descripción               |
 |--------|------------------------|---------------------------|
 | POST   | /contracts/create       | Crear un nuevo contrato   |
 | GET    | /contracts/validate/{id}| Validar un contrato       |
+
+### 🏪 Mercado
+| Método | Endpoint               | Descripción               |
+|--------|------------------------|---------------------------|
+| GET    | /market/prices          | Precios de activos        |
+| GET    | /market/price/{symbol}  | Precio de un activo       |
+
+### 📊 Panel de Control
+| Método | Endpoint               | Descripción               |
+|--------|------------------------|---------------------------|
+| GET    | /api/dashboard          | Ver panel de usuario      |
 
 
 ## 🧪 Pruebas

@@ -4,6 +4,8 @@
 Este proyecto es un **BACKEND** diseñado para una plataforma de comercio de criptomonedas y blockchain, desarrollado como parte de un **HACKATÓN DE LA CAIXA TECH**.  
 Permite gestionar wallets, realizar transacciones, simular una blockchain y ejecutar contratos inteligentes.
 
+![Caixa Hack](mundovirtual/caixa%20hack.png)
+
 
 ## 🏗️ Arquitectura del Proyecto
 La arquitectura está organizada en varios módulos que colaboran para ofrecer la funcionalidad completa de la plataforma:
@@ -105,3 +107,11 @@ mvn test
 ├── 📜 application.properties                      # Configuración de Spring Boot
 ├── 📜 README.md                                   # Documentación del proyecto
 ```
+
+## Mundo Virtual
+
+![Caixa Hack](mundovirtual/mas.png)
+
+## Agenda del Hackatón
+
+![Caixa Hack](mundovirtual/cosas.png)
